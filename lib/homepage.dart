@@ -17,7 +17,6 @@ class _HomepageState extends State<Homepage> {
   List toDoList = [
     ["Make tutorial", false],
     ["Do Exercise", false],
-    ["Do Exercise", false]
   ];
 
   //checkbox was tapped
