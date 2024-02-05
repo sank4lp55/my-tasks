@@ -56,18 +56,19 @@ class _HomepageState extends State<Homepage> {
           appBar: AppBar(
             backgroundColor: Colors.yellow,
             elevation: 0,
-            title: Text("MY TASKS"),
+            title: const Text("MY TASKS"),
             centerTitle: true,
           ),
           floatingActionButton: FloatingActionButton(
             onPressed: () {
               createNewTask();
             },
-            child: Icon(Icons.add),
+            child: const Icon(Icons.add),
             backgroundColor: Colors.yellow,
-            shape: CircleBorder(),
+            shape: const CircleBorder(),
           ),
           body: ListView.builder(
+            physics: const BouncingScrollPhysics(),
             itemCount: toDoList.length,
             itemBuilder: (context, index) {
               return ToDoTile(
