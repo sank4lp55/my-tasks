@@ -29,6 +29,9 @@ class _ToDoTileState extends State<ToDoTile> {
           motion: StretchMotion(),
           children: [
             SlidableAction(
+              borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(12),
+                  bottomRight: Radius.circular(12)),
               onPressed: widget.deleteFunction,
               icon: Icons.delete,
               backgroundColor: Colors.red,
